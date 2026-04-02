@@ -1,3 +1,32 @@
-#folders
+# --- Python ---
 .venv/
+__pycache__/
+*.py[cod]
+
+# --- Downloaded models / resources ---
+# (Keep the repo lightweight; remove these lines if you intentionally want to version models.)
 downloaded_resources/
+resources/downloaded_resources/
+**/downloaded_resources/
+*.gguf
+
+# --- Visual Studio (user state / caches) ---
+.vs/
+**/.vs/
+ipch/
+*.VC.db
+*.VC.VC.opendb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# --- Visual Studio build outputs (common) ---
+Debug/
+Release/
+x64/
+x86/
+Win32/
+bin/
+obj/
+out/
