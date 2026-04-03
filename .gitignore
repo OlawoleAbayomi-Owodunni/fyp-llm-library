@@ -4,7 +4,6 @@ __pycache__/
 *.py[cod]
 
 # --- Downloaded models / resources ---
-# (Keep the repo lightweight; remove these lines if you intentionally want to version models.)
 downloaded_resources/
 resources/downloaded_resources/
 **/downloaded_resources/
@@ -30,3 +29,24 @@ Win32/
 bin/
 obj/
 out/
+
+# --- MSVC / linker build artifacts ---
+*.obj
+*.pdb
+*.idb
+*.ilk
+*.ipdb
+*.iobj
+*.tlog
+*.log
+*.pch
+
+# --- CMake (generated) ---
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+
+# Local-only presets (do not commit)
+CMakeUserPresets.json

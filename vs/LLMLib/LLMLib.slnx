@@ -3,5 +3,6 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="LLMLib/LLMLib.vcxproj" />
+  <Project Path="LLMLib/LLMLib.vcxproj" Id="7af31888-0e22-4fee-aab2-e3d1492e42bb" />
+  <Project Path="LLMTest/LLMTest.vcxproj" Id="7c87d7af-7d1e-44e1-a16a-5d5ad0e4579b" />
 </Solution>

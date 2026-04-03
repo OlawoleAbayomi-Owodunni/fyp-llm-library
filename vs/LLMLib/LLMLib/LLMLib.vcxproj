@@ -74,11 +74,13 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;GGML_VERSION="0.9.9";GGML_COMMIT="unknown";_CRT_SECURE_NO_WARNINGS;GGML_USE_CPU;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp20</LanguageStandard>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\llm;$(ProjectDir)..\..\..\external\llama.cpp\ggml\include;$(ProjectDir)..\..\..\external\llama.cpp\ggml\src;$(ProjectDir)..\..\..\external\llama.cpp\src;$(ProjectDir)..\..\..\external\llama.cpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(Filename)%(Extension).obj</ObjectFileName>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -92,11 +94,13 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;GGML_VERSION="0.9.9";GGML_COMMIT="unknown";_CRT_SECURE_NO_WARNINGS;GGML_USE_CPU;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp20</LanguageStandard>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\llm;$(ProjectDir)..\..\..\external\llama.cpp\ggml\include;$(ProjectDir)..\..\..\external\llama.cpp\ggml\src;$(ProjectDir)..\..\..\external\llama.cpp\src;$(ProjectDir)..\..\..\external\llama.cpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(Filename)%(Extension).obj</ObjectFileName>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -108,11 +112,13 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN64;GGML_VERSION="0.9.9";GGML_COMMIT="unknown";_CRT_SECURE_NO_WARNINGS;GGML_USE_CPU;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp20</LanguageStandard>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(Filename)%(Extension).obj</ObjectFileName>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\llm;$(ProjectDir)..\..\..\external\llama.cpp\ggml\include;$(ProjectDir)..\..\..\external\llama.cpp\ggml\src;$(ProjectDir)..\..\..\external\llama.cpp\src;$(ProjectDir)..\..\..\external\llama.cpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -126,11 +132,13 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN64;GGML_VERSION="0.9.9";GGML_COMMIT="unknown";_CRT_SECURE_NO_WARNINGS;GGML_USE_CPU;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp20</LanguageStandard>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(Filename)%(Extension).obj</ObjectFileName>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\llm;$(ProjectDir)..\..\..\external\llama.cpp\ggml\include;$(ProjectDir)..\..\..\external\llama.cpp\ggml\src;$(ProjectDir)..\..\..\external\llama.cpp\src;$(ProjectDir)..\..\..\external\llama.cpp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -139,10 +147,218 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\external\llama.cpp\ggml\src\ggml-backend-dl.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\ggml\src\ggml-backend-impl.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\ggml\src\ggml-common.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\ggml\src\ggml-cpu\arch-fallback.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\ggml\src\ggml-cpu\binary-ops.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\ggml\src\ggml-cpu\common.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\ggml\src\ggml-cpu\ggml-cpu-impl.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\ggml\src\ggml-cpu\hbm.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\ggml\src\ggml-cpu\ops.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\ggml\src\ggml-cpu\quants.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\ggml\src\ggml-cpu\repack.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\ggml\src\ggml-cpu\simd-gemm.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\ggml\src\ggml-cpu\simd-mappings.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\ggml\src\ggml-cpu\traits.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\ggml\src\ggml-cpu\unary-ops.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\ggml\src\ggml-cpu\vec.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\ggml\src\ggml-impl.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\ggml\src\ggml-quants.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\ggml\src\ggml-threading.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\llama-adapter.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\llama-arch.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\llama-batch.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\llama-chat.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\llama-context.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\llama-cparams.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\llama-ext.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\llama-grammar.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\llama-graph.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\llama-hparams.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\llama-impl.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\llama-io.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\llama-kv-cache-iswa.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\llama-kv-cache.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\llama-kv-cells.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\llama-memory-hybrid-iswa.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\llama-memory-hybrid.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\llama-memory-recurrent.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\llama-memory.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\llama-mmap.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\llama-model-loader.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\llama-model-saver.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\llama-model.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\llama-quant.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\llama-sampler.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\llama-vocab.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\models\models.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\unicode-data.h" />
+    <ClInclude Include="..\..\..\external\llama.cpp\src\unicode.h" />
+    <ClInclude Include="..\..\..\llm\LLMWrapper.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\external\llama.cpp\ggml\src\ggml-alloc.c" />
+    <ClCompile Include="..\..\..\external\llama.cpp\ggml\src\ggml-backend-dl.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\ggml\src\ggml-backend-reg.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\ggml\src\ggml-backend.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\ggml\src\ggml-cpu\binary-ops.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\ggml\src\ggml-cpu\ggml-cpu.c" />
+    <ClCompile Include="..\..\..\external\llama.cpp\ggml\src\ggml-cpu\ggml-cpu.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\ggml\src\ggml-cpu\hbm.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\ggml\src\ggml-cpu\ops.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\ggml\src\ggml-cpu\quants.c" />
+    <ClCompile Include="..\..\..\external\llama.cpp\ggml\src\ggml-cpu\repack.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\ggml\src\ggml-cpu\traits.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\ggml\src\ggml-cpu\unary-ops.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\ggml\src\ggml-cpu\vec.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\ggml\src\ggml-opt.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\ggml\src\ggml-quants.c" />
+    <ClCompile Include="..\..\..\external\llama.cpp\ggml\src\ggml-threading.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\ggml\src\ggml.c" />
+    <ClCompile Include="..\..\..\external\llama.cpp\ggml\src\gguf.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\llama-adapter.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\llama-arch.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\llama-batch.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\llama-chat.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\llama-context.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\llama-cparams.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\llama-grammar.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\llama-graph.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\llama-hparams.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\llama-impl.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\llama-io.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\llama-kv-cache-iswa.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\llama-kv-cache.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\llama-memory-hybrid-iswa.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\llama-memory-hybrid.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\llama-memory-recurrent.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\llama-memory.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\llama-mmap.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\llama-model-loader.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\llama-model-saver.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\llama-model.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\llama-quant.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\llama-sampler.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\llama-vocab.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\llama.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\afmoe.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\apertus.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\arcee.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\arctic.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\arwkv7.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\baichuan.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\bailingmoe.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\bailingmoe2.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\bert.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\bitnet.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\bloom.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\chameleon.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\chatglm.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\codeshell.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\cogvlm.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\cohere2-iswa.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\command-r.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\dbrx.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\deci.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\deepseek.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\deepseek2.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\delta-net-base.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\dots1.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\dream.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\ernie4-5-moe.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\ernie4-5.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\eurobert.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\exaone-moe.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\exaone.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\exaone4.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\falcon-h1.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\falcon.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\gemma-embedding.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\gemma.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\gemma2-iswa.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\gemma3.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\gemma3n-iswa.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\glm4-moe.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\glm4.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\gpt2.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\gptneox.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\granite-hybrid.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\granite.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\grok.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\grovemoe.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\hunyuan-dense.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\hunyuan-moe.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\internlm2.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\jais.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\jais2.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\jamba.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\kimi-linear.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\lfm2.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\llada-moe.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\llada.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\llama-iswa.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\llama.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\maincoder.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\mamba-base.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\mamba.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\mimo2-iswa.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\minicpm3.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\minimax-m2.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\mistral3.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\modern-bert.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\mpt.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\nemotron-h.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\nemotron.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\neo-bert.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\olmo.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\olmo2.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\olmoe.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\openai-moe-iswa.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\openelm.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\orion.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\paddleocr.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\pangu-embedded.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\phi2.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\phi3.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\plamo.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\plamo2.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\plamo3.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\plm.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\qwen.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\qwen2.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\qwen2moe.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\qwen2vl.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\qwen3.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\qwen35.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\qwen35moe.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\qwen3moe.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\qwen3next.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\qwen3vl-moe.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\qwen3vl.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\refact.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\rnd1.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\rwkv6-base.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\rwkv6.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\rwkv6qwen2.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\rwkv7-base.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\rwkv7.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\seed-oss.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\smallthinker.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\smollm3.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\stablelm.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\starcoder.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\starcoder2.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\step35-iswa.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\t5-dec.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\t5-enc.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\wavtokenizer-dec.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\models\xverse.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\unicode-data.cpp" />
+    <ClCompile Include="..\..\..\external\llama.cpp\src\unicode.cpp" />
+    <ClCompile Include="..\..\..\llm\LLMWrapper.cpp" />
     <ClCompile Include="LLMLib.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -150,6 +366,13 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\CMakeLists.txt" />
+    <Text Include="..\..\..\external\llama.cpp\ggml\src\ggml-cpu\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\CMakePresets.json" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
