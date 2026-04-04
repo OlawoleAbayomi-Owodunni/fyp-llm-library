@@ -10,8 +10,8 @@ This document describes the internal structure of this repository and the design
 
 - Provide a **minimal**, game-friendly C++ API for local text generation.
 - Hide `llama.cpp` C API details behind a small wrapper.
-- Make integration into another CMake-based project straightforward.
-- Keep resources (model/context/sampler) cleaned up safely.
+- Make integration into another CMake-based project straightforward (`add_subdirectory()` + link).
+- Manage model/context/sampler lifetime safely (RAII).
 
 ### Non-goals (current)
 
@@ -161,6 +161,7 @@ Key design choices:
 Why `unique_ptr`:
 - There is a single clear owner of the model/context: the wrapper instance.
 - Prevents accidental copies.
+- Automatic cleanup on early returns and exceptions.
 
 Why custom deleters:
 - There are no default destructors for these C types; they must be freed with specific API calls so I had to make these.

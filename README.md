@@ -12,19 +12,10 @@ This repository is intended to be modular (usable as a submodule) and keep LLM i
 - A Python script to download a GGUF model from Hugging Face
 - A vendored dependency as a git submodule: `external/llama.cpp`
 
-## What this repo is not
-
-- Not an online service / REST API
-- Not a full chat system (no conversation history management; `Generate()` clears KV cache each call)
-- Not a token streaming UI (generation is returned as one `std::string`)
-- Not an “engine plugin” (Unity/Unreal/etc.) out of the box
-
-## Typical use-cases
-
 Good fit:
-- Single-player games that want local text generation for NPC barks, ambient lore, item descriptions
-- Prototyping offline generation where determinism and networking are not required
-- Tooling apps that want an embedded LLM without external dependencies at runtime (besides the model file)
+- Offline / single-player games that want local text generation
+- Tools that want inference code bundled in-process (but without standing up a server)
+- Projects where the goal is a clear wrapper boundary around a complex native dependency
 
 Poor fit / not supported by design:
 - Mobile / web builds
@@ -51,6 +42,7 @@ Build-time:
 - C++17 compiler
 - CMake (3.21+) and Ninja (if using CMake presets)
 - Python 3.x (only for model download)
+- Visual Studio 2026
 
 Third-party:
 - `external/llama.cpp` (git submodule)
@@ -101,7 +93,7 @@ If Hugging Face requires authentication for the model repo, log in first (one-ti
 
 ### 4.1) Build and run (CMake presets)
 
-This repo ships a root `CMakePresets.json` with `Ninja` presets.
+This repo ships `CMakePresets.json` using the generator `Visual Studio 18 2026`.
 
 Configure:
 
@@ -121,14 +113,11 @@ Run the test executable:
 .\out\build\x86_debug\bin\LLMTest.exe
 ```
 
-Notes:
-- The root `CMakePresets.json` currently contains **hard-coded MSVC tool paths** as I haven't yet made that part virtual. On another machine you will likely need to edit those, or create `CMakeUserPresets.json` (which is git-ignored) and override the compiler paths there.
+### 4.2) Build + run with Visual Studio (alternative)
 
-### 4.2) Build and run (Visual Studio solution)
+Open `vs/LLMLib/LLMLib.slnx`.
 
-Open `vs/LLMLib/LLMLib.slnx` in Visual Studio.
-
-- Build the solution (`LLMLib` + `LLMTest`)
+- Build the solution
 - Set `LLMTest` as the startup project
 - Run (Ctrl+F5)
 
@@ -141,6 +130,7 @@ Notes:
 
 ```powershell
 git submodule add <REPO_URL> external/fyp-llm-library
+git submodule update --init --recursive
 ```
 
 In your game’s `CMakeLists.txt`:
@@ -201,7 +191,6 @@ Inside `llm/LLMWrapper.cpp`:
 
 - **Model file not found**: confirm `resources/downloaded_resources/<model>.gguf` exists.
 - **Wrong working directory when downloading**: run the download script from `resources/` as shown above.
-- **Preset compiler paths don’t match your machine**: create `CMakeUserPresets.json` and set `CMAKE_CXX_COMPILER` / friends, or delete the hard-coded entries in `CMakePresets.json`. If you're struggling to define your own presets, you can copy this readme as well as the cmakelist into chat gpt and ask it generate you one for your machine.
 - **Slow generation**: this wrapper is CPU-only by default; consider enabling GPU layers via `modelParams.n_gpu_layers`. Note that if you built using MSVC, you MIGHT encounter issues with trying to use the GPU cores of your system. I did and that's why I have it use CPU cores by default.
 
 ## License / attribution
