@@ -27,22 +27,21 @@ Poor fit / not supported by design:
 
 - `llm/`
   - `LLMWrapper.h`, `LLMWrapper.cpp`: the public wrapper API and implementation
+- `llm/tests/`
+  - `LLMTest.cpp`: console smoke test used by the CMake target `LLMTest`
 - `resources/`
   - `scripts/requirements.txt`: Python dependency list
   - `scripts/download_model.py`: downloads a GGUF model
   - `downloaded_resources/` *(created locally)*: downloaded models (ignored by git)
 - `external/llama.cpp/`: `llama.cpp` git submodule (third-party)
-- `vs/LLMLib/`: Visual Studio solution/projects for convenience
-  - `LLMLib`: static library project
-  - `LLMTest`: console test app project
 
 ## Dependencies
 
 Build-time:
 - C++17 compiler
-- CMake (3.21+) and Ninja (if using CMake presets)
+- CMake (4.x+)
 - Python 3.x (only for model download)
-- Visual Studio 2026
+- Visual Studio 2026 (recommended on Windows; used by the CMake presets generator)
 
 Third-party:
 - `external/llama.cpp` (git submodule)
@@ -113,16 +112,8 @@ Run the test executable:
 .\out\build\x86_debug\bin\LLMTest.exe
 ```
 
-### 4.2) Build + run with Visual Studio (alternative)
-
-Open `vs/LLMLib/LLMLib.slnx`.
-
-- Build the solution
-- Set `LLMTest` as the startup project
-- Run (Ctrl+F5)
-
 Notes:
-- `LLMTest` uses a relative model path (`./resources/downloaded_resources/...`). When running from Visual Studio, ensure the **working directory is the repository root** (Project Properties → Debugging → Working Directory), or define `FYP_SOURCE_DIR` located at the top of the Wrapper.cpp file to point at the repo root.
+- `LLMTest` uses a model path rooted at `FYP_SOURCE_DIR` (falls back to `"."` if not defined). In the CMake build, `FYP_SOURCE_DIR` is provided as a compile definition for `LLMTest` in `CMakeLists.txt`.
 
 ## Using `LLMLib` in your own project
 
