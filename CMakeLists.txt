@@ -17,11 +17,11 @@ target_include_directories(LLMLib PUBLIC llm)
 target_link_libraries(LLMLib PUBLIC llama)
 
 # Create the LLMTest executable
-add_executable(LLMTest "${CMAKE_SOURCE_DIR}/llm/tests/LLMTest.cpp")
+add_executable(LLMTest "${CMAKE_CURRENT_SOURCE_DIR}/llm/tests/LLMTest.cpp")
 target_link_libraries(LLMTest PRIVATE LLMLib)
-target_compile_definitions(LLMTest PRIVATE FYP_SOURCE_DIR="${CMAKE_SOURCE_DIR}")
+target_compile_definitions(LLMTest PRIVATE FYP_SOURCE_DIR="${CMAKE_CURRENT_SOURCE_DIR}")
 
 # Put the EXE next to llama.dll / ggml*.dll (which are under bin/)
 set_target_properties(LLMTest PROPERTIES
-	RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin"
+	RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/bin"
 )
