@@ -52,9 +52,9 @@
   ],
 
   "buildPresets": [
-    {"name": "x86_debug", "configurePreset": "x86_debug"},
-    {"name": "x86_release", "configurePreset": "x86_release"},
-    {"name": "x64_debug", "configurePreset": "x64_debug"},
-    {"name": "x64_release", "configurePreset": "x64_release"}
+    {"name": "x86_debug", "configurePreset": "x86_debug", "configuration": "Debug"},
+    {"name": "x86_release", "configurePreset": "x86_release", "configuration": "Release"},
+    {"name": "x64_debug", "configurePreset": "x64_debug", "configuration": "Debug"},
+    {"name": "x64_release", "configurePreset": "x64_release", "configuration": "Release"}
   ]
 }
