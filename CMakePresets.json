@@ -24,11 +24,37 @@
         "CMAKE_BUILD_TYPE": "Release",
         "CMAKE_CXX_STANDARD": "17"
       }
+    },
+    {
+      "name": "x64_debug",
+      "generator": "Visual Studio 18 2026",
+      "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "architecture": {
+        "value": "x64"
+      },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_CXX_STANDARD": "17"
+      }
+    },
+    {
+      "name": "x64_release",
+      "generator": "Visual Studio 18 2026",
+      "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "architecture": {
+        "value": "x64"
+      },
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_CXX_STANDARD": "17"
+      }
     }
   ],
 
   "buildPresets": [
     {"name": "x86_debug", "configurePreset": "x86_debug"},
-    {"name": "x86_release", "configurePreset": "x86_release"}
+    {"name": "x86_release", "configurePreset": "x86_release"},
+    {"name": "x64_debug", "configurePreset": "x64_debug"},
+    {"name": "x64_release", "configurePreset": "x64_release"}
   ]
 }
