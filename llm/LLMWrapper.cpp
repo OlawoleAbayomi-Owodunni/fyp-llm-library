@@ -162,8 +162,8 @@ bool LLMWrapper::LoadModel(const std::string& model_path)
 	// 4) Create a context for the model with appropriate parameters
 	llama_context_params contextParams = llama_context_default_params();
 
-	contextParams.n_ctx = 1024; // Set context size to 1024 tokens (can be adjusted based on model capabilities and requirements)
-	contextParams.n_batch = 256; // Set logical batch size to 256 tokens for decoding the prompt in chunks
+	contextParams.n_ctx = 512; // Set context size to 1024 tokens (can be adjusted based on model capabilities and requirements)
+	contextParams.n_batch = 64; // Set logical batch size to 256 tokens for decoding the prompt in chunks
 	contextParams.n_ubatch = contextParams.n_batch; // Set physical batch size to match logical batch size
 	contextParams.n_seq_max = 1; // Set max sequences to 1 for single sequence generation
 
