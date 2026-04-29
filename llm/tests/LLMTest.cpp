@@ -10,7 +10,7 @@
 #endif
 
 
-int main()
+int main(int argc, char** argv)
 {
 	const std::filesystem::path modelPath = std::filesystem::path(FYP_SOURCE_DIR) / "resources" / "downloaded_resources" / "Llama-3.2-1B-Instruct-Q4_K_M.gguf";
 
@@ -21,9 +21,15 @@ int main()
 		return 1;
 	}
 
-	const std::string prompt = "Generate one short Sci-Fi NPC dialogue line";
+	std::string prompt;
+	if(argc > 1) {
+		prompt = argv[1];
+	}
+	else {
+		prompt = "Generate one short Sci-Fi NPC dialogue line";
+	}
 	std::string response = llm.Generate(prompt);
-	std::cout << "Prompt: " << prompt << "\nResponse: " << response << std::endl;
+	std::cout << "Prompt: " << prompt << "\n\nResponse: " << response << std::endl;
 	return 0;
 }
 
