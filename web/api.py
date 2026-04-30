@@ -1,4 +1,4 @@
-from _future_ import annotations
+from __future__ import annotations
 
 import os
 import subprocess
@@ -9,7 +9,7 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_EXE = REPO_ROOT / "out" / "build" / "x86_debug" / "bin" / "LLMTest.exe"
+DEFAULT_EXE = REPO_ROOT / "out" / "build" / "x64_release" / "bin" / "Release" / "LLMTest.exe"
 LLMTEST_EXE = Path(os.environ.get("LLMTEST_EXE", str(DEFAULT_EXE)))
 
 def run_llmtest(prompt: str) -> str:

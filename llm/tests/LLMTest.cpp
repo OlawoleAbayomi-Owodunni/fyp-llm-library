@@ -29,7 +29,8 @@ int main(int argc, char** argv)
 		prompt = "Generate one short Sci-Fi NPC dialogue line";
 	}
 	std::string response = llm.Generate(prompt);
-	std::cout << "Prompt: " << prompt << "\n\nResponse: " << response << std::endl;
+	std::cerr << "Prompt: " << prompt << std::endl;
+	std::cout << "\n\nResponse: " << response << std::endl;
 	return 0;
 }
 

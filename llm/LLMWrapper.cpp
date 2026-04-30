@@ -137,8 +137,8 @@ bool LLMWrapper::LoadModel(const std::string& model_path)
 	modelParams.n_gpu_layers = 0; // -1 to use all GPU Layers, 0 to use CPU, >0 to use that many GPU layers
 
 	// Log information about the model file to make sure the path is correct and the file is accessible
-	std::cout << "sizeof(void*): " << sizeof(void*) << "\n";
-	std::cout << "file_size: " << std::filesystem::file_size(model_path) << " bytes\n";
+	std::cerr << "sizeof(void*): " << sizeof(void*) << "\n";
+	std::cerr << "file_size: " << std::filesystem::file_size(model_path) << " bytes\n";
 
 	llm_model.reset(llama_model_load_from_file(model_path.c_str(), modelParams));
 
