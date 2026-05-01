@@ -98,7 +98,7 @@ What was done:
 - Added an inbound Network Security Group rule allowing TCP port `5000` with priority `400` (rule name: `allow-flask-5000`).
 
 Observed VM details:
-- Public IP address: 20.203.185.178  (DO NOT TRY TO CONNECT — recorded for documentation only)
+- Public IP address: 20.203.185.178
 - NSG inbound rule priority: 400
 
 Current state:

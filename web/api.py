@@ -6,10 +6,17 @@ from pathlib import Path
 
 from flask import Flask, jsonify, request
 
+import platform
+
 app = Flask(__name__)
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_EXE = REPO_ROOT / "out" / "build" / "x64_release" / "bin" / "Release" / "LLMTest.exe"
+
+if platform.system() == "Windows":
+    DEFAULT_EXE = REPO_ROOT / "out" / "build" / "x64_release" / "bin" / "Release" / "LLMTest.exe"
+else:
+    DEFAULT_EXE = REPO_ROOT / "build" / "bin" / "LLMTest"
+
 LLMTEST_EXE = Path(os.environ.get("LLMTEST_EXE", str(DEFAULT_EXE)))
 
 def run_llmtest(prompt: str) -> str:
