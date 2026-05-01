@@ -87,6 +87,7 @@ Current state:
 - The model is stored in Azure Blob Storage and can be downloaded later by the VM setup process.
 - The storage provisioning part of the cloud setup is complete.
 
+
 ### Step 6 - Create the Azure VM and open port 5000
 
 Status: Complete
@@ -105,6 +106,73 @@ Current state:
 - The VM exists in the same region as the storage account and has a public IP.
 - Port 5000 is allowed through the VM's network security group so the Flask app can be reached externally.
 - Next step: SSH into the VM and perform the setup/build steps so the service can run on the VM.
+
+### Step 7 - SSH to the VM and run setup
+
+Status: Complete
+
+What was done:
+- SSH'd into the VM (`llm-lib-vm`) and installed build tools and runtime dependencies.
+- Cloned the repository onto the VM and downloaded the model from Azure Blob Storage into `resources/downloaded_resources/` using a SAS URL.
+- Built `LLMTest` with CMake on the VM.
+- Created a Python virtual environment in `web/.venv`, installed `Flask` and `gunicorn`, and started the web service with `gunicorn`.
+
+Observed remote timings (three runs via `curl` from local machine):
+- Run 1: 19.152031s
+- Run 2: 19.342630s
+- Run 3: 19.436745s
+
+Server evidence:
+- `gunicorn` was started on the VM and reported listening at `http://0.0.0.0:5000` and booted a worker process (logs captured).
+
+Current state:
+- The VM is running the Flask service behind `gunicorn` and is responding to external requests.
+- Cold-start + generation time observed remotely is ~19.2–19.4 seconds for this prompt/model on the VM (recorded above).
+- Next step: verify endpoint and capture screenshots/logs for documentation and run multiple warm requests to collect CPU/memory stats while generating.
+
+### Step 8 - Verify remote endpoint and capture evidence
+
+Status: Complete
+
+What was done:
+- Verified the remote `/generate` endpoint by sending multiple `curl` requests from the local machine.
+- Collected response JSON files.
+- Captured `gunicorn` logs (access/error) from the VM and copied them locally (`gunicorn-access.log`, `gunicorn-error.log`).
+- Collected CPU/memory snapshots during generation (`top_capture.txt`).
+- Gathered screenshots of the Azure Portal pages for the resource group, storage account (showing the uploaded blob), and VM networking/NSG rules.
+
+Observed remote request timings (examples):
+- Run 1: 19.152031s
+- Run 2: 19.342630s
+- Run 3: 19.436745s
+
+Artifacts captured:
+- `response1.json`, `response2.json`, `response3.json` — JSON responses from the endpoint
+- `top_capture.txt` — CPU/memory snapshot files collected on the VM during generation
+- `deployment_screenshots/*.png` — Portal and terminal screenshots
+
+Current state:
+- Remote endpoint is functional and returning model generations.
+- A set of verification artifacts and logs has been collected and stored locally for inclusion in the assignment deliverables.
+- Step 9 (deeper performance measurement and analysis) is now in-progress.
+
+### Step 9 - Collect performance observations
+
+Status: Complete
+
+What was done:
+- Captured server-side runtime of the native binary using `/usr/bin/time -v` and saved the output to `llmtest_time.log`.
+
+Observed sample timings:
+- Remote HTTP end-to-end: ~19.15s, ~19.34s, ~19.44s
+- Local (dev machine) end-to-end: ~6.10s (from earlier local tests)
+
+Artifacts produced:
+- `llmtest_time.log` — server-side `/usr/bin/time -v` output for a sample run
+
+Current state:
+- Performance data has been collected and saved as artifacts for analysis and for inclusion in the submission.
+- Step 10 (package deliverables) is now in-progress.
 
 ## Current Project State
 

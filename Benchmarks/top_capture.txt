@@ -1,0 +1,404 @@
+top - 01:47:11 up  2:01,  2 users,  load average: 0.04, 0.05, 0.03
+Tasks: 133 total,   1 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4867.1 free,    639.6 used,   2733.1 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   7298.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+
+top - 01:47:12 up  2:01,  2 users,  load average: 0.04, 0.05, 0.03
+Tasks: 133 total,   1 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.5 sy,  0.0 ni, 99.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4867.1 free,    639.6 used,   2733.1 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   7298.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   1185 _chrony   20   0   11216   3828   3112 S   1.0   0.0   0:02.90 chronyd
+   6194 azureus+  20   0   12336   5904   3756 R   1.0   0.1   0:00.01 top
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+
+top - 01:47:13 up  2:01,  2 users,  load average: 0.04, 0.05, 0.03
+Tasks: 133 total,   1 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.5 us,  0.5 sy,  0.0 ni, 99.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4867.1 free,    639.6 used,   2733.1 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   7298.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   3643 root      20   0    3848   2976   2052 S   2.0   0.0   0:01.86 hv_kvp_+
+   6173 azureus+  20   0   14976   7284   5320 S   1.0   0.1   0:00.09 sshd
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+
+top - 01:47:14 up  2:01,  2 users,  load average: 0.04, 0.05, 0.03
+Tasks: 134 total,   2 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 25.9 us,  4.5 sy,  0.0 ni, 69.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4727.9 free,    778.7 used,   2733.2 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   7159.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   6195 azureus+  20   0 1323904 950724 795996 R  59.0  11.7   0:00.59 LLMTest
+   5815 azureus+  20   0  116040  31072   8904 S   1.0   0.4   0:00.25 gunicorn
+   6194 azureus+  20   0   12336   5904   3756 R   1.0   0.1   0:00.02 top
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+
+top - 01:47:15 up  2:01,  2 users,  load average: 0.04, 0.05, 0.03
+Tasks: 134 total,   2 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 46.8 us,  4.0 sy,  0.0 ni, 49.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4727.9 free,    778.7 used,   2733.2 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   7159.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   6195 azureus+  20   0 1370532   1.3g 780292 R 100.0  16.2   0:01.60 LLMTest
+   5815 azureus+  20   0  116040  31072   8904 S   1.0   0.4   0:00.26 gunicorn
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+
+top - 01:47:16 up  2:01,  2 users,  load average: 0.04, 0.05, 0.03
+Tasks: 134 total,   2 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 50.2 us,  0.5 sy,  0.0 ni, 49.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4727.9 free,    778.7 used,   2733.2 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   7159.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   6195 azureus+  20   0 1370532   1.3g 780292 R  99.0  16.2   0:02.60 LLMTest
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+
+top - 01:47:17 up  2:01,  2 users,  load average: 0.12, 0.06, 0.03
+Tasks: 134 total,   2 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 50.2 us,  0.0 sy,  0.0 ni, 49.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4355.9 free,   1150.6 used,   2733.2 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6787.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   6195 azureus+  20   0 1370532   1.3g 780292 R 100.0  16.2   0:03.61 LLMTest
+   6194 azureus+  20   0   12336   5904   3756 R   1.0   0.1   0:00.03 top
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+
+
+top - 01:47:18 up  2:01,  2 users,  load average: 0.12, 0.06, 0.03
+Tasks: 134 total,   2 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 50.0 us,  0.0 sy,  0.0 ni, 50.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4355.9 free,   1150.6 used,   2733.2 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6787.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   6195 azureus+  20   0 1370532   1.3g 780292 R 100.0  16.2   0:04.62 LLMTest
+   6194 azureus+  20   0   12336   5904   3756 R   1.0   0.1   0:00.04 top
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+
+
+top - 01:47:19 up  2:01,  2 users,  load average: 0.12, 0.06, 0.03
+Tasks: 134 total,   2 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 50.2 us,  0.0 sy,  0.0 ni, 49.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4355.9 free,   1150.6 used,   2733.2 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6787.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   6195 azureus+  20   0 1370532   1.3g 780292 R  99.0  16.2   0:05.62 LLMTest
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+
+
+top - 01:47:20 up  2:01,  2 users,  load average: 0.12, 0.06, 0.03
+Tasks: 134 total,   2 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 50.0 us,  0.5 sy,  0.0 ni, 49.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4355.9 free,   1150.6 used,   2733.3 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6787.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   6195 azureus+  20   0 1370532   1.3g 780292 R 100.0  16.2   0:06.63 LLMTest
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+
+
+top - 01:47:21 up  2:01,  2 users,  load average: 0.12, 0.06, 0.03
+Tasks: 134 total,   2 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 50.2 us,  0.0 sy,  0.0 ni, 48.8 id,  1.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4355.9 free,   1150.6 used,   2733.3 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6787.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   6195 azureus+  20   0 1370532   1.3g 780292 R  99.0  16.2   0:07.63 LLMTest
+   6194 azureus+  20   0   12336   5904   3756 R   1.0   0.1   0:00.05 top
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+
+
+top - 01:47:22 up  2:01,  2 users,  load average: 0.19, 0.08, 0.04
+Tasks: 134 total,   2 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 50.7 us,  0.0 sy,  0.0 ni, 47.8 id,  1.5 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4355.9 free,   1150.6 used,   2733.3 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6787.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   6195 azureus+  20   0 1370532   1.3g 780292 R 100.0  16.2   0:08.64 LLMTest
+   3965 root      20   0  412232  35772  12972 S   1.0   0.4   0:04.81 python3
+   6194 azureus+  20   0   12336   5904   3756 R   1.0   0.1   0:00.06 top
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+
+
+top - 01:47:23 up  2:01,  2 users,  load average: 0.19, 0.08, 0.04
+Tasks: 134 total,   2 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 50.0 us,  0.5 sy,  0.0 ni, 49.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4355.9 free,   1150.6 used,   2733.3 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6787.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   6195 azureus+  20   0 1370532   1.3g 780292 R 100.0  16.2   0:09.65 LLMTest
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+
+
+top - 01:47:24 up  2:01,  2 users,  load average: 0.19, 0.08, 0.04
+Tasks: 134 total,   2 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 50.5 us,  0.0 sy,  0.0 ni, 49.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4355.9 free,   1150.6 used,   2733.3 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6787.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   6195 azureus+  20   0 1370532   1.3g 780292 R  99.0  16.2   0:10.65 LLMTest
+   6194 azureus+  20   0   12336   5904   3756 R   1.0   0.1   0:00.07 top
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+
+
+top - 01:47:25 up  2:01,  2 users,  load average: 0.19, 0.08, 0.04
+Tasks: 134 total,   2 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 50.2 us,  0.0 sy,  0.0 ni, 49.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4355.9 free,   1150.6 used,   2733.3 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6787.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   6195 azureus+  20   0 1370532   1.3g 780292 R 100.0  16.2   0:11.66 LLMTest
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+
+
+top - 01:47:26 up  2:01,  2 users,  load average: 0.19, 0.08, 0.04
+Tasks: 134 total,   2 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 50.0 us,  0.5 sy,  0.0 ni, 49.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4355.9 free,   1150.6 used,   2733.3 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6787.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   6195 azureus+  20   0 1370532   1.3g 780292 R  99.0  16.2   0:12.66 LLMTest
+   6194 azureus+  20   0   12336   5904   3756 R   1.0   0.1   0:00.08 top
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+
+
+top - 01:47:27 up  2:01,  2 users,  load average: 0.25, 0.09, 0.04
+Tasks: 134 total,   2 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 50.2 us,  0.0 sy,  0.0 ni, 49.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4355.9 free,   1150.6 used,   2733.3 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6787.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   6195 azureus+  20   0 1370532   1.3g 780292 R 100.0  16.2   0:13.67 LLMTest
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+
+
+top - 01:47:28 up  2:01,  2 users,  load average: 0.25, 0.09, 0.04
+Tasks: 134 total,   2 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 50.5 us,  0.0 sy,  0.0 ni, 49.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4355.9 free,   1150.6 used,   2733.3 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6787.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   6195 azureus+  20   0 1370532   1.3g 780292 R 100.0  16.2   0:14.68 LLMTest
+   3965 root      20   0  412232  35772  12972 S   1.0   0.4   0:04.82 python3
+   6194 azureus+  20   0   12336   5904   3756 R   1.0   0.1   0:00.09 top
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+
+
+top - 01:47:29 up  2:01,  2 users,  load average: 0.25, 0.09, 0.04
+Tasks: 134 total,   2 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 50.0 us,  0.5 sy,  0.0 ni, 49.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4355.9 free,   1150.5 used,   2733.4 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6787.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   6195 azureus+  20   0 1370532   1.3g 780292 R  99.0  16.2   0:15.68 LLMTest
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+
+
+top - 01:47:30 up  2:02,  2 users,  load average: 0.25, 0.09, 0.04
+Tasks: 134 total,   2 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 50.2 us,  0.0 sy,  0.0 ni, 49.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4355.9 free,   1150.5 used,   2733.4 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6787.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   6195 azureus+  20   0 1370532   1.3g 780292 R 100.0  16.2   0:16.69 LLMTest
+   6112 root      20   0       0      0      0 I   1.0   0.0   0:00.04 kworker+
+   6194 azureus+  20   0   12336   5904   3756 R   1.0   0.1   0:00.10 top
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+
+
+top - 01:47:31 up  2:02,  2 users,  load average: 0.25, 0.09, 0.04
+Tasks: 134 total,   2 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 50.2 us,  0.0 sy,  0.0 ni, 49.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4355.9 free,   1150.5 used,   2733.4 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6787.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   6195 azureus+  20   0 1370532   1.3g 780292 R 100.0  16.2   0:17.70 LLMTest
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+
+
+top - 01:47:32 up  2:02,  2 users,  load average: 0.31, 0.11, 0.05
+Tasks: 134 total,   2 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 50.0 us,  0.5 sy,  0.0 ni, 49.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4355.9 free,   1150.5 used,   2733.4 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6787.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   6195 azureus+  20   0 1370532   1.3g 780292 R  99.0  16.2   0:18.70 LLMTest
+   5814 azureus+  20   0  110740  26772  10872 S   1.0   0.3   0:00.27 gunicorn
+   6194 azureus+  20   0   12336   5904   3756 R   1.0   0.1   0:00.11 top
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+
+
+top - 01:47:33 up  2:02,  2 users,  load average: 0.31, 0.11, 0.05
+Tasks: 133 total,   1 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s): 13.5 us,  1.0 sy,  0.0 ni, 85.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4355.9 free,   1150.5 used,   2733.4 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6787.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   6107 root      20   0       0      0      0 I   1.0   0.0   0:00.06 kworker+
+   6194 azureus+  20   0   12336   5904   3756 R   1.0   0.1   0:00.12 top
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+
+
+top - 01:47:34 up  2:02,  2 users,  load average: 0.31, 0.11, 0.05
+Tasks: 133 total,   1 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4355.9 free,   1150.5 used,   2733.4 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6787.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+
+
+top - 01:47:35 up  2:02,  2 users,  load average: 0.31, 0.11, 0.05
+Tasks: 133 total,   1 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.5 sy,  0.0 ni, 99.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4857.7 free,    648.7 used,   2733.4 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   7289.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+
+
+top - 01:47:36 up  2:02,  2 users,  load average: 0.31, 0.11, 0.05
+Tasks: 133 total,   1 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4857.7 free,    648.7 used,   2733.4 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   7289.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+
+
+top - 01:47:37 up  2:02,  2 users,  load average: 0.29, 0.11, 0.05
+Tasks: 133 total,   1 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4857.7 free,    648.7 used,   2733.4 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   7289.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   5662 root      20   0       0      0      0 I   1.0   0.0   0:00.22 kworker+
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+
+
+top - 01:47:38 up  2:02,  2 users,  load average: 0.29, 0.11, 0.05
+Tasks: 133 total,   1 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.5 us,  0.0 sy,  0.0 ni, 99.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4857.7 free,    648.6 used,   2733.5 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   7289.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   6194 azureus+  20   0   12336   5904   3756 R   2.0   0.1   0:00.14 top
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+
+
+top - 01:47:39 up  2:02,  2 users,  load average: 0.29, 0.11, 0.05
+Tasks: 133 total,   1 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7938.4 total,   4857.7 free,    648.6 used,   2733.5 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   7289.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+
+
+top - 01:47:40 up  2:02,  2 users,  load average: 0.29, 0.11, 0.05
+Tasks: 133 total,   1 running, 132 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.5 sy,  0.0 ni, 99.0 id,  0.0 wa,  0.0 hi,  0.5 si,  0.0 st 
+MiB Mem :   7938.4 total,   4857.7 free,    648.6 used,   2733.5 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.   7289.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0   22828  14412   9936 S   0.0   0.2   0:05.15 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+
